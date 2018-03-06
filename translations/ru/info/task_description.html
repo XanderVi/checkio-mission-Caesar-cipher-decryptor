@@ -1,51 +1,39 @@
 <!-- Describe task in general -->
 
 <p>
-    Компьютерный формат даты и времени обычно выглядит так: 21.05.2018 16:30<br>
-    Люди предпочитают видеть эту же информацию в более развернутом виде: 21 May 2018 year, 16 hours 30 minutes<br>
-    Ваша задача - преобразовать дату и время из числового формата и словесно-числовой.
+    Ваша задача - написать функцию, которая преобразовывает текст (название другой функции) из формата, принятого в Python (my_function_name) в CamelCase, принятый в JavaScript (MyFunctionName), где первая буква каждого слова - большая/заглавная.
 </p>
 
-<p style="text-align: center;">
+<!--<p style="text-align: center;">
     <img  title="The highest building" src="{{MEDIA}}example.png" alt="example" style="max-height: 283px"/>
-</p>
+</p> -->
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Входные данные: </strong> Дата и время как строка, состоящая из чисел (например: 14.02.2018 16:55)
+    <strong>Входные данные: </strong> Название функции как строка
 </p>
 
 <p>
-    <strong>Выходные данные: </strong> Та же самая дата и время, но в более развернутом формате
+    <strong>Output: </strong> То же самое название, но в CamelCase
 </p>
 
 
 <!-- Put some usage examples -->
 <div class="for_info_only">
 <p>
-<strong>Пример:</strong>
+<strong>Примеры:</strong>
 </p>
 {% if interpreter.slug == "js-node" %}
-<pre class="brush: javascript">dateTime("01.01.2000 00:00") == "1 January 2000 year 0 hours 0 minutes"
-dateTime("19.09.2999 01:59") == "19 September 2999 year 1 hour 59 minutes"
-dateTime("21.10.1999 18:01") == "21 October 1999 year 18 hours 1 minute"
-Обратите внимание, что слова "hour" и "minute" (в единственном числе) используются только когда время 01:mm (1 hour) или hh:01 (1 minute).
-Во всех остальных случаях следует использовать "hours" и "minutes".
-Для названий месяцев и остальных слов следует использовать их английские эквиваленты -
-January, February, March, April, May, June, July,
-August, September, October, November, December;
-year, hour/hours, minute/minutes
+<pre class="brush: javascript">toCamelCase("my_function_name") == "MyFunctionName"
+toCamelCase("i_phone") == "IPhone"
+toCamelCase("this_function_is_empty") == "ThisFunctionIsEmpty"
+toCamelCase("name") == "Name"
 </pre>
 {% else %}
-<pre class="brush: python">date_time("01.01.2000 00:00") == "1 January 2000 year 0 hours 0 minutes"
-date_time("19.09.2999 01:59") == "19 September 2999 year 1 hour 59 minutes"
-date_time("21.10.1999 18:01") == "21 October 1999 year 18 hours 1 minute"
-Обратите внимание, что слова "hour" и "minute" (в единственном числе) используются только когда время 01:mm (1 hour) или hh:01 (1 minute).
-Во всех остальных случаях следует использовать "hours" и "minutes".
-Для названий месяцев и остальных слов следует использовать их английские эквиваленты -
-January, February, March, April, May, June, July,
-August, September, October, November, December;
-year, hour/hours, minute/minutes
+<pre class="brush: python">to_CamelCase("my_function_name") == "MyFunctionName"
+to_CamelCase("i_phone") == "IPhone"
+to_CamelCase("this_function_is_empty") == "ThisFunctionIsEmpty"
+to_CamelCase("name") == "Name"
 </pre>
 {% endif %}
 </div>
@@ -54,15 +42,12 @@ year, hour/hours, minute/minutes
 <!-- The section is optional -->
 <p class="for_info_only">
     <strong>Как это используется: </strong>
-    Для улучшения взаимопонимания между человеком и компьютером.
+    Чтобы применять названия функций в том стиле, в каком они приняты в определенном языке (Python, JavaScript, и т.д.).
 </p>
 
 <!-- Here you can explain some constraints for input-->
 <!-- The section is optional -->
 <p><strong>Предусловия</strong>:<br>
-    0 < date <= 31<br>
-    0 < month <= 12<br>
-    0 < year <= 3000<br>
-    0 < hours < 24<br>
-    0 < minutes < 60
+    0 < len(string) <= 100<br>
+    Во входящих данных не будет чисел или пустых строк<br>
 </p>

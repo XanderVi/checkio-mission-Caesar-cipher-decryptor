@@ -1,6 +1,6 @@
 "use strict";
 
-function dateTime(date) {
+function toCamelCase(name) {
     // your code here
     return 0;
 }
@@ -9,7 +9,9 @@ var assert = require('assert');
 if (!global.is_checking) {
 
     // These "asserts" are used for self-checking and not for an auto-testing
-    assert.equal(dateTime("01.01.2000 00:00"), "1 January 2000 year 0 hours 0 minutes")
-    assert.equal(dateTime("09.05.1945 06:30"), "9 May 1945 year 6 hours 30 minutes")
+    assert.equal(toCamelCase("my_function_name"), "MyFunctionName")
+    assert.equal(toCamelCase("i_phone"), "IPhone")
+    assert.equal(toCamelCase("this_function_is_empty"), "ThisFunctionIsEmpty")
+    assert.equal(toCamelCase("name"), "Name")
     console.log("Coding complete? Click 'Check' to earn cool rewards!");
 }

@@ -11,26 +11,26 @@ Each test is a dict with
 TESTS = {
     "Basics": [
         {
-            "input": "01.01.2000 00:00",
-            "answer": "1 January 2000 year 0 hours 0 minutes"
+            "input": "my_function_name",
+            "answer": "MyFunctionName"
         },
         {
-            "input": "09.05.1945 06:30",
-            "answer": "9 May 1945 year 6 hours 30 minutes"
+            "input": "i_phone",
+            "answer": "IPhone"
         }
     ],
     "Extra": [
         {
-            "input": "20.11.1990 03:55",
-            "answer": "20 November 1990 year 3 hours 55 minutes"
+            "input": "this_function_is_empty",
+            "answer": "ThisFunctionIsEmpty"
         },
         {
-            "input": "09.07.1995 16:50",
-            "answer": "9 July 1995 year 16 hours 50 minutes"
+            "input": "name",
+            "answer": "Name"
         },
 	{
-            "input": "11.04.1812 01:01",
-            "answer": "11 April 1812 year 1 hour 1 minute"
+            "input": "this_is_really_very_long_string",
+            "answer": "ThisIsReallyVeryLongString"
         }
     ]
 }

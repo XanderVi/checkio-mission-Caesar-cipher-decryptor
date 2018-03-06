@@ -8,8 +8,8 @@ requirejs(['ext_editor_io', 'jquery_190'],
         var io = new extIO({
             multipleArguments: true,
             functions: {
-                python: 'date_time',
-                js: 'dateTime'
+                python: 'to_CamelCase',
+                js: 'toCamelCase'
             }
         });
         io.start();

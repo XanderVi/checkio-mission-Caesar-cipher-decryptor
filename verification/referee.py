@@ -38,8 +38,8 @@ api.add_listener(
     CheckiOReferee(
         tests=TESTS,
         function_name={
-            "python": "date_time",
-            "js": "dateTime"
+            "python": "to_CamelCase",
+            "js": "toCamelCase"
         },
         cover_code={
             #'python-3': cover_codes.unwrap_args,
