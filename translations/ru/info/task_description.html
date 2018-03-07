@@ -1,20 +1,20 @@
 <!-- Describe task in general -->
 
 <p>
-    Ваша задача - написать функцию, которая преобразовывает текст (название другой функции) из формата, принятого в Python (my_function_name) в CamelCase, принятый в JavaScript (MyFunctionName), где первая буква каждого слова - большая/заглавная.
+    Ваша миссия - зашифровать текст сообщения (в исходных данных не будет специальных символов вроде "!", "&", "?", только текст и пробелы) используя шифр Цезаря где каждая буква исходного текста заменяется другой, которая находится на определенном расстоянии в алфавите. Например, ("a b c", 3) == "d e f"
 </p>
 
-<!--<p style="text-align: center;">
-    <img  title="The highest building" src="{{MEDIA}}example.png" alt="example" style="max-height: 283px"/>
-</p> -->
+<p style="text-align: center;">
+    <img  title="The highest building" src="{{MEDIA}}example.jpg" alt="example" style="max-height: 283px"/>
+</p>
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Входные данные: </strong> Название функции как строка
+    <strong>Входные данные: </strong> Секретное сообщение как строка (только маленькие буквы и пробелы)
 </p>
 
 <p>
-    <strong>Output: </strong> То же самое название, но в CamelCase
+    <strong>Output: </strong> Тот же самый текст, но зашифрованный
 </p>
 
 
@@ -24,16 +24,18 @@
 <strong>Примеры:</strong>
 </p>
 {% if interpreter.slug == "js-node" %}
-<pre class="brush: javascript">toCamelCase("my_function_name") == "MyFunctionName"
-toCamelCase("i_phone") == "IPhone"
-toCamelCase("this_function_is_empty") == "ThisFunctionIsEmpty"
-toCamelCase("name") == "Name"
+<pre class="brush: javascript">toEncrypt("a b c", 3) == "d e f"
+toEncrypt("a b c", -3) == "x y z"
+toEncrypt("simple text", 16) == "iycfbu junj"
+toEncrypt("important text", 10) == "swzybdkxd dohd"
+toEncrypt("state secret", -13) == "fgngr frperg"
 </pre>
 {% else %}
-<pre class="brush: python">to_CamelCase("my_function_name") == "MyFunctionName"
-to_CamelCase("i_phone") == "IPhone"
-to_CamelCase("this_function_is_empty") == "ThisFunctionIsEmpty"
-to_CamelCase("name") == "Name"
+<pre class="brush: python">to_encrypt("a b c", 3) == "d e f"
+to_encrypt("a b c", -3) == "x y z"
+to_encrypt("simple text", 16) == "iycfbu junj"
+to_encrypt("important text", 10) == "swzybdkxd dohd"
+to_encrypt("state secret", -13) == "fgngr frperg"
 </pre>
 {% endif %}
 </div>
@@ -42,12 +44,12 @@ to_CamelCase("name") == "Name"
 <!-- The section is optional -->
 <p class="for_info_only">
     <strong>Как это используется: </strong>
-    Чтобы применять названия функций в том стиле, в каком они приняты в определенном языке (Python, JavaScript, и т.д.).
+    В криптографии, для сохранения важной информации, для сохранения секретности переписки.
 </p>
 
 <!-- Here you can explain some constraints for input-->
 <!-- The section is optional -->
 <p><strong>Предусловия</strong>:<br>
-    0 < len(string) <= 100<br>
-    Во входящих данных не будет чисел или пустых строк<br>
+    0 < text < 100<br>
+    0 < delta < 30
 </p>

@@ -8,8 +8,8 @@ requirejs(['ext_editor_io', 'jquery_190'],
         var io = new extIO({
             multipleArguments: true,
             functions: {
-                python: 'to_CamelCase',
-                js: 'toCamelCase'
+                python: 'to_encrypt',
+                js: 'toEncrypt'
             }
         });
         io.start();

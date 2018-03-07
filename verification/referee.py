@@ -38,11 +38,11 @@ api.add_listener(
     CheckiOReferee(
         tests=TESTS,
         function_name={
-            "python": "to_CamelCase",
-            "js": "toCamelCase"
+            "python": "to_encrypt",
+            "js": "toEncrypt"
         },
         cover_code={
-            #'python-3': cover_codes.unwrap_args,
-            #'js-node': cover_codes.js_unwrap_args
+            'python-3': cover_codes.unwrap_args,
+            'js-node': cover_codes.js_unwrap_args
         }
     ).on_ready)

@@ -1,20 +1,20 @@
 <!-- Describe task in general -->
 
 <p>
-    You mission is to convert some function name (string) from Python format (for example "my_function_name") into CamelCase ("MyFunctionName"), where first char of every word is in uppercase and all words are concatenated in one.
+    You mission is to encrypt secret message (text only, without special chars like "!", "&", "?" etc.) using Caesar cipher where each letter of input text is replaced by another which stands at a fixed distance. For example ("a b c", 3) == "d e f"
 </p>
 
-<!--<p style="text-align: center;">
-    <img  title="The highest building" src="{{MEDIA}}example.png" alt="example" style="max-height: 283px"/>
-</p> -->
+<p style="text-align: center;">
+    <img  title="The highest building" src="{{MEDIA}}example.jpg" alt="example" style="max-height: 283px"/>
+</p>
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Input: </strong> Function name as string
+    <strong>Input: </strong> Secret message as string (lowercase letters only and spaces)
 </p>
 
 <p>
-    <strong>Output: </strong> The same string, but in CamelCase
+    <strong>Output: </strong> The same string, but encrypted
 </p>
 
 
@@ -24,16 +24,18 @@
 <strong>Example:</strong>
 </p>
 {% if interpreter.slug == "js-node" %}
-<pre class="brush: javascript">toCamelCase("my_function_name") == "MyFunctionName"
-toCamelCase("i_phone") == "IPhone"
-toCamelCase("this_function_is_empty") == "ThisFunctionIsEmpty"
-toCamelCase("name") == "Name"
+<pre class="brush: javascript">toEncrypt("a b c", 3) == "d e f"
+toEncrypt("a b c", -3) == "x y z"
+toEncrypt("simple text", 16) == "iycfbu junj"
+toEncrypt("important text", 10) == "swzybdkxd dohd"
+toEncrypt("state secret", -13) == "fgngr frperg"
 </pre>
 {% else %}
-<pre class="brush: python">to_CamelCase("my_function_name") == "MyFunctionName"
-to_CamelCase("i_phone") == "IPhone"
-to_CamelCase("this_function_is_empty") == "ThisFunctionIsEmpty"
-to_CamelCase("name") == "Name"
+<pre class="brush: python">to_encrypt("a b c", 3) == "d e f"
+to_encrypt("a b c", -3) == "x y z"
+to_encrypt("simple text", 16) == "iycfbu junj"
+to_encrypt("important text", 10) == "swzybdkxd dohd"
+to_encrypt("state secret", -13) == "fgngr frperg"
 </pre>
 {% endif %}
 </div>
@@ -42,12 +44,12 @@ to_CamelCase("name") == "Name"
 <!-- The section is optional -->
 <p class="for_info_only">
     <strong>How it is used: </strong>
-    To use name of the functions in that style which are used in the language (Python, JavaScript, etc.).
+    For cryptography and to save important information.
 </p>
 
 <!-- Here you can explain some constraints for input-->
 <!-- The section is optional -->
 <p><strong>Precondition</strong>:<br>
-    0 < len(string) <= 100<br>
-    no numbers in the input<br>
+    0 < text < 100<br>
+    0 < delta < 30
 </p>
