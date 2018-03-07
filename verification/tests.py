@@ -15,7 +15,7 @@ TESTS = {
             "answer": "d e f"
         },
         {
-            "input": ["a b c", 3],
+            "input": ["a b c", -3],
             "answer": "x y z"
         }
     ],
