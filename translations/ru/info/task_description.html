@@ -1,7 +1,9 @@
 <!-- Describe task in general -->
 
 <p>
-    Ваша миссия - зашифровать текст сообщения (в исходных данных не будет специальных символов вроде "!", "&", "?", только текст и пробелы) используя шифр Цезаря где каждая буква исходного текста заменяется другой, которая находится на определенном расстоянии в алфавите. Например, ("a b c", 3) == "d e f"
+    О, нет! При получении зашифрованного сообщения мы обнаружили там лишние символы!<br>
+    Ваша миссия - расшифровать текст сообщения (который будет состоять из букв только в нижнем регистре, пробелов и специальных символов вроде "!", "&", "?") используя шифр Цезаря где каждая буква исходного текста заменяется другой, которая находится на определенном расстоянии в алфавите. Например, ("a b c", 3) == "d e f"
+Также вам нужно будет игнорировать/удалить все специальные символы. Таким образом сообщение вида ("!d! [e] &f*", -3) будет расшифровано всего лишь как "a b c", не более.
 </p>
 
 <p style="text-align: center;">
@@ -10,11 +12,11 @@
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Входные данные: </strong> Секретное сообщение как строка (только маленькие буквы и пробелы)
+    <strong>Входные данные: </strong> Секретное сообщение как строка (только маленькие буквы, пробелы и специальные символы)
 </p>
 
 <p>
-    <strong>Output: </strong> Тот же самый текст, но зашифрованный
+    <strong>Output: </strong> Расшифрованный текст
 </p>
 
 
@@ -24,18 +26,18 @@
 <strong>Примеры:</strong>
 </p>
 {% if interpreter.slug == "js-node" %}
-<pre class="brush: javascript">toEncrypt("a b c", 3) == "d e f"
-toEncrypt("a b c", -3) == "x y z"
-toEncrypt("simple text", 16) == "iycfbu junj"
-toEncrypt("important text", 10) == "swzybdkxd dohd"
-toEncrypt("state secret", -13) == "fgngr frperg"
+<pre class="brush: javascript">toDecrypt("!d! [e] &f*", -3) == "a b c"
+toDecrypt("x^$# y&*( (z):-)", 3) == "a b c"
+toDecrypt("iycfbu!@# junj%&", -16) == "simple text"
+toDecrypt("*$#%swzybdkxd !)(^#%dohd", -10) == "important text"
+toDecrypt("fgngr **&&frperg^__^", 13) == "state secret"
 </pre>
 {% else %}
-<pre class="brush: python">to_encrypt("a b c", 3) == "d e f"
-to_encrypt("a b c", -3) == "x y z"
-to_encrypt("simple text", 16) == "iycfbu junj"
-to_encrypt("important text", 10) == "swzybdkxd dohd"
-to_encrypt("state secret", -13) == "fgngr frperg"
+<pre class="brush: python">to_decrypt("!d! [e] &f*", -3) == "a b c"
+to_decrypt("x^$# y&*( (z):-)", 3) == "a b c"
+to_decrypt("iycfbu!@# junj%&", -16) == "simple text"
+to_decrypt("*$#%swzybdkxd !)(^#%dohd", -10) == "important text"
+to_decrypt("fgngr **&&frperg^__^", 13) == "state secret"
 </pre>
 {% endif %}
 </div>

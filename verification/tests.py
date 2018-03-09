@@ -11,26 +11,26 @@ Each test is a dict with
 TESTS = {
     "Basics": [
         {
-            "input": ["a b c", 3],
-            "answer": "d e f"
+            "input": ["!d! [e] &f*", -3],
+            "answer": "a b c"
         },
         {
-            "input": ["a b c", -3],
-            "answer": "x y z"
+            "input": ["x^$# y&*( (z):-)", 3],
+            "answer": "a b c"
         }
     ],
     "Extra": [
         {
-            "input": ["simple text", 16],
-            "answer": "iycfbu junj"
+            "input": ["iycfbu!@# junj%&", -16],
+            "answer": "simple text"
         },
         {
-            "input": ["important text", 10],
-            "answer": "swzybdkxd dohd"
+            "input": ["*$#%swzybdkxd !)(^#%dohd", -10],
+            "answer": "important text"
         },
 	{
-            "input": ["state secret", -13],
-            "answer": "fgngr frperg"
+            "input": ["fgngr **&&frperg^__^", 13],
+            "answer": "state secret"
         }
     ]
 }

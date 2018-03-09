@@ -8,8 +8,8 @@ requirejs(['ext_editor_io', 'jquery_190'],
         var io = new extIO({
             multipleArguments: true,
             functions: {
-                python: 'to_encrypt',
-                js: 'toEncrypt'
+                python: 'to_decrypt',
+                js: 'toDecrypt'
             }
         });
         io.start();

@@ -38,8 +38,8 @@ api.add_listener(
     CheckiOReferee(
         tests=TESTS,
         function_name={
-            "python": "to_encrypt",
-            "js": "toEncrypt"
+            "python": "to_decrypt",
+            "js": "toDecrypt"
         },
         cover_code={
             'python-3': cover_codes.unwrap_args,

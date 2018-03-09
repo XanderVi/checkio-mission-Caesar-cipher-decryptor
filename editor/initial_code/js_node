@@ -1,18 +1,18 @@
 "use strict";
 
-function toEncrypt(text, delta) {
+function toDecrypt(cryptotext, delta) {
     // your code here
-    return cipher;
+    return text;
 }
 
 var assert = require('assert');
 if (!global.is_checking) {
 
     // These "asserts" are used for self-checking and not for an auto-testing
-    assert.equal(toEncrypt("a b c", 3), "d e f")
-    assert.equal(toEncrypt("a b c", -3), "x y z")
-    assert.equal(toEncrypt("simple text", 16), "iycfbu junj")
-    assert.equal(toEncrypt("important text", 10), "swzybdkxd dohd")
-    assert.equal(toEncrypt("state secret", -13), "fgngr frperg")
+    assert.equal(toDecrypt("!d! [e] &f*", -3), "a b c")
+    assert.equal(toDecrypt("x^$# y&*( (z):-)", 3), "a b c")
+    assert.equal(toDecrypt("iycfbu!@# junj%&", -16), "simple text")
+    assert.equal(toDecrypt("*$#%swzybdkxd !)(^#%dohd", -10), "important text")
+    assert.equal(toDecrypt("fgngr **&&frperg^__^", 13), "state secret")
     console.log("Coding complete? Click 'Check' to earn cool rewards!");
 }
