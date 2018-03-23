@@ -2,11 +2,13 @@
 
 function toDecrypt(cryptotext, delta) {
     // your code here
-    return text;
+    return cryptotext;
 }
 
 var assert = require('assert');
 if (!global.is_checking) {
+    console.log('Example:')
+    console.log(toDecrypt('abc', 10))
 
     // These "asserts" are used for self-checking and not for an auto-testing
     assert.equal(toDecrypt("!d! [e] &f*", -3), "a b c")
