@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 285.75001 285.75001"
+   height="1080"
+   width="1080">
+  <defs
+     id="defs2">
+    <marker
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend"
+       style="overflow:visible">
+      <path
+         id="path5322"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#fa8f00;fill-opacity:1;fill-rule:evenodd;stroke:#fa8f00;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend-4"
+       style="overflow:visible">
+      <path
+         id="path5322-5"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#fa8f00;fill-opacity:1;fill-rule:evenodd;stroke:#fa8f00;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+  </defs>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <rect
+     y="-0.0035707499"
+     x="0.0084436871"
+     height="285.75"
+     width="285.75"
+     id="rect7624"
+     style="fill:#c9ebfb;fill-opacity:1;stroke:none;stroke-width:18.2091732;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:60.53666687px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#294270;fill-opacity:1;stroke:none;stroke-width:1.51341677"
+     x="9.3145847"
+     y="145.37354"
+     id="text873-0-2"><tspan
+       id="tspan871-3-5"
+       x="9.3145847"
+       y="145.37354"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:Roboto;-inkscape-font-specification:'Roboto Medium';fill:#294270;fill-opacity:1;stroke-width:1.51341677">a b c d e f</tspan><tspan
+       id="tspan4931-4"
+       x="9.3145847"
+       y="145.37354"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:Roboto;-inkscape-font-specification:'Roboto Medium';fill:#294270;fill-opacity:1;stroke-width:1.51341677" /></text>
+  <path
+     style="fill:none;stroke:#fa8f00;stroke-width:1.51341677px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend-4)"
+     d="m 23.005313,152.80983 c 19.89619,7.2684 39.606429,14.46874 63.57144,14.29542 23.965017,-0.1716 52.143767,-7.8261 80.176807,-15.43942"
+     id="path5309-7" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:60.53666687px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#294270;fill-opacity:1;stroke:none;stroke-width:1.51341677"
+     x="34.270489"
+     y="201.14352"
+     id="text873-0-3-4"><tspan
+       id="tspan871-3-6-4"
+       x="34.270489"
+       y="201.14352"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:40.35777664px;font-family:Roboto;-inkscape-font-specification:'Roboto Medium';fill:#294270;fill-opacity:1;stroke-width:1.51341677">a+3=d</tspan></text>
+</svg>
